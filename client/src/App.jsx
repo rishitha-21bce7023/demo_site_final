@@ -15,7 +15,6 @@ import Boards from 'routes/Forum/Boards';
 import Board from 'routes/Forum/Board';
 import Thread from 'routes/Forum/Thread';
 import Users from 'routes/Users';
-import Admins from 'routes/Users/Admins';
 import User from 'routes/User';
 import Banned from 'routes/Banned';
 import Dashboard from 'routes/Dashboard';
@@ -48,7 +47,6 @@ const App = () => {
             <GeneralRoute path="/thread/:threadId" component={Thread} />
             <GeneralRoute path="/users" component={Users} />
             <UsersOnlyRoute path="/user/:userName" component={User} />
-            <GeneralRoute path="/admins" component={Admins} />
             <AdminsOnlyRoute path="/dashboard" component={Dashboard} />
             <GeneralRoute exact path="/uploads" component={Folders} />
             <GeneralRoute path="/uploads/:folderName" component={Folder} />
